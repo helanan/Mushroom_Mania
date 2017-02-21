@@ -1,0 +1,6 @@
+.DS_Store
+lib/node_modules/
+lib/bower_components/
+app/AppConstants.js
+npm-debug.log
+public/
