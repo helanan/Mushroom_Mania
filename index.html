@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Todo App</title>
     <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -9,28 +10,31 @@
 
 <!-- TODO: Initialize our app -->
 <body ng-app="MushroomApp">
+<p>Welcome {{'fName' + " " + 'lName' + '!'}}</p>
 
+<!-- <div ng-controller="MushroomAddCtr"></div> -->
+<!--mushroom list start-->
+<div ng-controller="MushroomListCtrl">
+  <ul>
+    <li ng-repeat="mushroom in mushrooms">
+      <li>{{mushrooms}}
+        <span id="mushroom-name">{{mushrooms}}</span>
+        <p id="mushroom-description">{{mushrooms}}</p>
+      </li>
+</div>
+<!--mushroom list end-->
   <!-- TODO: Add a nav controller -->
   <!-- <div ng-include= "'partials/navbar.html'"></div> -->
-  <div ng-include= "'partials/mushroom-list.html'"</div>
-  <!-- <div ng-include= "'partials/mushroom-details.html'"</div> -->
+  <!-- <div ng-include= "'partials/add-new-mushroom.html'"</div>
+  <div ng-include= "'partials/view-my-mushrooms.html'"</div> -->
 
   <!-- start of body -->
   <!-- <div ng-controller="MushroomListCtrl"> -->
-    <div class="row">
-        <div class="col-xs-6 col-xs-offset-3">
-          <!-- Let's call a js function from our HTML. wat? -->
-          <button class="col-xs-6 btn btn-success" ng-click="newItem()">New Item</button>
-          <button class="col-xs-6 btn btn-info" ng-click="allItem()">All Items</button>
-        </div>
-      </div>
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 main-container">
-            <div class="col-xs-12" ng-view></div>
+            <div class="col-xs-12" id="mushroom-page" ng-view></div>
           </div>
         </div>
-      </div>
-    </div>
 
 <!-- dependencies -->
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>

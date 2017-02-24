@@ -1,31 +1,13 @@
-
-<div class="container" id="user-mushrooms-list">
-	<div class="row">
-		<h2>Mushroom Finder</h2>
-	</div>
-	<div class="list-group">
-	    <div class="list-group-item">
-	        <div class="media">
-	            <div class="media-left">
-	               Edible?: <!-- Mushroom icon by Icons8 -->
-<img class="icon icons8-Mushroom" src="data:image/png;base64,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" width="50" height="50">
-<br><br>
-              </div>
-	            <div class="media-body">
-                <br><p>DO NOT EAT VERY POISONOUS: {{mushroomEdible}}</p>
-	            </div>
-	        </div>
-	        <div class="list-group-reset">
-                <div class="list-group">
-            	    <div class="list-group-item">
-            	        <div class="media">
-            	            <div class="media-left">
-            	                Mushroom Image: <img src="{{mushroom.image}}" style="width:35px;height:35px"/>
-            	            </div>
-            	            <div class="media-body">
-                                <p>Mushroom Name: {{mushroom.name}}</p>
-                                <p>Mushroom Description{{mushroom.description}}</p>
-            	            </div>
-            	        </div>
-            	    </div>
-	            <div class="media-body">
+<div class="container" id="mushroom-list">
+  <div class="container" id="all-mushrooms-list">
+    <form class="navbar-form navbar-right" id="search-mushrooms" width>
+      <div class="input-group">
+      <input type="text" class="form-control" id="search-my-mushrooms" placeholder="search mushrooms..."></input>
+      <button name="search" type="submit" class="btn btn-default" id="submit">Submit</button>
+    </div>
+  </div>
+</form>
+    <div class="container" id="mushroom-display">
+    </div><!--end of single mushroom display-->
+  </div><!--end of all mushrooms display container -->
+</div> <!--end of mushroom-list container-->
