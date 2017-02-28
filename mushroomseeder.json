@@ -11,63 +11,63 @@
                 "id": 2,
                 "name": "Portabella",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/002-food-1.svg",
                 "description": "Portabella mushrooms are similar to white mushrooms but are much larger and more brown in color. They are harvested when they are very mature, which gives them a more dense texture and a deeper flavor."
         },
         {
                 "id": 3,
                 "name": "Shiitake",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/003-food.svg",
                 "description": "Shiitake mushrooms are mostly brown and have wide, umbrella-shaped tops. They have a dense texture and meaty taste."
         },
         {
                 "id": 4,
                 "name": "Morel",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/004-mushrooms-3.svg",
                 "description": "These cone-shaped mushrooms vary in color from tan to brown. They also have a stronger flavor, which has been described as earthy, smoky or even nutty."
         },
         {
                 "id": 5,
                 "name": "Oyster",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/005-mushrooms-6.svg",
                 "description": "These mushrooms get their name from their appearance and their flavor. They typically are white, beige or gray and are found in the wild growing on logs or trees. Their stems have broad gills and rise into a flat, mostly uneven top that resembles an oyster. These mushrooms have a soft texture and delicate flavor that some people compare with seafood."
         },
         {
                 "id": 6,
                 "name": "Chanterelle",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/006-mushrooms-5.svg",
                 "description": "They have a delicate texture, so care must be taken when they are cooked, to avoid having them become tough. Their taste has been described as nutty."
         },
         {
                 "id": 7,
                 "name": "Reishi",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/008-mushrooms-3.svg",
                 "description": "This mushroom has a long history of use as an herbal medicine. Modern research is now confirming its healing power in the body."
         },
         {
                 "id": 8,
                 "name": "Cremini",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/009-mushrooms-2.svg",
                 "description": "Cremini, also known as crimini mushrooms, are simply a different strain than the white button. Developed by commercial growers, they are brown in color and have a slightly deeper taste."
         },
         {
                 "id": 9,
                 "name": "Porcini",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/010-mushroom-2.svg",
                 "description": "Due to their strong nutty flavor, this is an incredibly popular gourmet mushroom."
         },
         {
                 "id": 10,
                 "name": "Matsutaki",
                 "edible": true,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/012-mushroom.svg",
                 "description": "Every year between September and January, pickers on the West Coast of North America search for this spicy-smelling mushroom with a passion usually only reserved for morel hunters."
 
         },
@@ -75,7 +75,7 @@
                 "id": 11,
                 "name": "Agaric",
                 "edible": false,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/1488232692_mushroom.png",
                 "description": "The main toxic agents in Amanita muscaria are muscimol and ibotenic acid. These act on the central nervous system causing loss of coordination, alternating agitation and sleep, nausea and in some cases hallucinations."
 
         },
@@ -83,7 +83,7 @@
                 "id": 12,
                 "name": "Angel Wing",
                 "edible": false,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/014-mushrooms",
                 "description": "Found throughout the Northern Hemisphere angel wing gets its name firstly from how it looks and secondly because eating it gives a good chance of sending you packing."
 
         },
@@ -91,7 +91,7 @@
                 "id": 13,
                 "name": "Dapperling",
                 "edible": false,
-                "img": "https://maxcdn.icons8.com/Color/PNG/24/Food/mushroom-24.png",
+                "img": "/app/img/011-mushroom-1.svg",
                 "description": "This small, tasty looking mushroom and many of the Lepiota family, contain the deadly amatoxin which is capable of destroying the liver. It is found in conifer forests throughout Europe and North America and has been responsible for several deaths over the years."
 
         },
