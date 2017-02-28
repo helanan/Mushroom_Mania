@@ -2,42 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Todo App</title>
+    <title>Mushroom Finder</title>
     <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lobster|Open+Sans+Condensed:300" rel="stylesheet">
 </head>
 
 <!-- TODO: Initialize our app -->
-<body ng-app="MushroomApp">
-<p>Welcome {{'fName' + " " + 'lName' + '!'}}</p>
+<body class="body" ng-app="MushroomApp">
 
-<!-- <div ng-controller="MushroomAddCtr"></div> -->
-<!--mushroom list start-->
-<div ng-controller="MushroomListCtrl">
-  <ul>
-    <li ng-repeat="mushroom in mushrooms">
-      <li>{{mushrooms}}
-        <span id="mushroom-name">{{mushrooms}}</span>
-        <p id="mushroom-description">{{mushrooms}}</p>
-      </li>
-</div>
-<!--mushroom list end-->
   <!-- TODO: Add a nav controller -->
-  <!-- <div ng-include= "'partials/navbar.html'"></div> -->
-  <!-- <div ng-include= "'partials/add-new-mushroom.html'"</div>
-  <div ng-include= "'partials/view-my-mushrooms.html'"</div> -->
+<div ng-include="'partials/navbar.html'"></div>
 
-  <!-- start of body -->
-  <!-- <div ng-controller="MushroomListCtrl"> -->
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 main-container">
-            <div class="col-xs-12" id="mushroom-page" ng-view></div>
-          </div>
-        </div>
+  <!-- TODO: Add a controller for our mushroom list -->
+
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 main-container">
+        <div class="col-xs-12" ng-view></div>
+      </div>
+    </div>
+
 
 <!-- dependencies -->
-<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js">
 </script>
@@ -46,15 +33,23 @@
 <script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
 
 <!-- controllers -->
-<script type="text/javascript" src="/app/app.js"></script>
-<!-- <script type="text/javascript" src="app/values/fb-creds.js"></script> -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="/app/values/fb-creds.js"></script>
 
+<!-- <script type="text/javascript" src="app/values/fb-creds.js"></script> -->
+<script type="text/javascript" src="/app/factories/AuthFactory.js"></script>
 <script type="text/javascript" src="/app/factories/FilterFactory.js"></script>
 <script type="text/javascript" src="/app/factories/MushroomFactory.js"></script>
 
-<!-- <script type="text/javascript" src="/app/controllers/NavCtrl.js"></script> -->
+<script type="text/javascript" src="app/controllers/UserCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/UserDetailsCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/NavCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomCtrl.js"></script>
 <script type="text/javascript" src="/app/controllers/MushroomListCtrl.js"></script>
 <script type="text/javascript" src="/app/controllers/MushroomViewCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomNewCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomEditCtrl.js"></script>
+
 
 </body>
 </html>

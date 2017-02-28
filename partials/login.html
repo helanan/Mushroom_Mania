@@ -1,0 +1,32 @@
+<div class="form-group row">
+
+  <div class="input-group">
+    <section class="auth-form">
+      <div class="container">
+        <div class="clip-text">
+          Find My Shroom
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-xs-offset-5">
+        <button class="google" ng-click="loginGoogle()"><img src="app/img/google.png" width="25"></button>
+      </div>
+<div class="col-xs-6 col-xs-offset-4">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+       <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" autofocus="true"  ng-model="account.email">
+    </div>
+
+    <div>
+      Password: <input type="password" ng-model="account.password">
+    </div>
+    <div>
+      <button class="btn btn-info" ng-click="login()">Login</button>
+
+      <button class="btn btn-default" ng-click="register()">Register</button>
+    </div>
+    </div>
+    </section>
+  </div>
+
+</div>

@@ -1,0 +1,14 @@
+<h1>Mushroom Finder</h1>
+<!-- <div class="container" id="mushroom-list"> -->
+  <div ng-repeat="mushroom in mushrooms | filter: searchText.search">
+  <div class="panel panel-default" id="all-mushrooms-list">
+      <div class="panel-body">
+          <div class="col-xs-1"><input type="checkbox" name=""/></div>
+          <div class="col-xs-7"><a ng-href="#!/mushrooms/{{mushroom.id}}">{{mushroom.name}}</a></div>
+          <div class="col-xs-2">{{mushroom.description}}</div>
+          <div class="col-xs-1">{{mushroom.edible}}</div>
+          <div class="col-xs-1"><button class="btn btn-danger" ng-click="mushroomDelete(mushroom.id)">X</button></div>
+        </div>
+      </div>
+    </div>
+</div>
