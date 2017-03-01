@@ -1,3 +1,112 @@
+body {
+  background-color: rgba(83, 251, 246, 0.22);
+  background-size: cover;
+  background-position: center; }
 
+.navbar-brand > img {
+  display: inline-block; }
+
+.navbar-default .navbar-brand {
+  color: #6a8c13;
+  padding-bottom: 5px;
+  margin-top: -10px; }
+
+.google {
+  background-color: transparent;
+  border-style: none;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.input-group {
+  width: 50%; }
+
+#mushroom-form {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: black; }
+
+#new-mushroom-message {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(62, 227, 227, 0.34); }
+
+#new-mushroom-title {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(90, 46, 97, 0.26); }
+
+#add-mushroom {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(189, 223, 75, 0.57); }
+
+#add {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(222, 164, 50, 0.43); }
+
+#mushroom-list {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: black; }
+
+#all-mushrooms-list {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(215, 221, 99, 0.31); }
+
+#search-mushrooms {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(120, 221, 99, 0.31); }
+
+#search-my-mushrooms {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(221, 99, 205, 0.31); }
+
+#mushroom-display {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: rgba(99, 181, 221, 0.31); }
+
+#mushroom-name {
+  font-size: 16px;
+  border-width: 1px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 15px; }
+
+#mushroom-description {
+  font-size: 14px; }
+
+.navbar {
+  font-family: 'Lobster', cursive; }
+
+/* RGB */
+.clip-text {
+  background: url(http://i.giphy.com/3oz8xWbKhsSQdDCc92.gif);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent;
+  height: 110px;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  flex-shrink: 0; }
 
 /*# sourceMappingURL=main.css.map */

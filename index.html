@@ -1,74 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Todo App</title>
+    <meta charset="utf-8">
+    <title>Mushroom Finder</title>
     <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lobster|Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-<!-- TODO: Initialize our app -->
-<body ng-app="MushroomApp">
-  <!-- TODO: Add a nav controller -->
-  <nav class="navbar navbar-findcond navbar-fixed-top" ng-controller="NavCtrl.js">
-  <div class="container">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Mushroom Finder</a>
-  </div>
-  <div class="collapse navbar-collapse" id="navbar">
-    <ul class="nav navbar-nav navbar-right" ng-repeat="item in navItems">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-fw fa-bell-o"></i> Mushroom Fun <span class="badge">0</span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#"><i class="fa fa-fw fa-tag"></i> <span class="badge">Mushroom Type</span> sayfası <span class="badge">Video</span>{{name}}</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">Music</span> Musroom Fun 3</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">Video</span> Mushroom Fun 4</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-thumbs-o-up"></i> <span class="badge">Game</span> Mushroom Fun 5</a></li>
-        </ul>
-      </li>
-      <li class="active"><a href="#">Helana Nosrat <span class="sr-only">(current)</span></a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Helana Nosrat</a></li>
-          <li><a href="#">Kim Kardashian</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Justin Beiber</a></li>
-          <li><a href="#exit">Ryan Renolds</a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="navbar-form navbar-right search-form" role="search">
-      <input type="text" class="form-control" placeholder="Search" />
-    </form>
-  </div>
-</div>
-</nav>
 
-  <!-- start of body -->
-  <div ng-controller="MushroomListCtrl">
-  <div class="col-xs-10 col-xs-offset-1 main-container">
-      <div class="col-xs-12" ng-view></div>
+<!-- TODO: Initialize our app -->
+<body class="body" ng-app="MushroomApp">
+
+  <!-- TODO: Add a nav controller -->
+<div ng-include="'partials/navbar.html'"></div>
+
+  <!-- TODO: Add a controller for our mushroom list -->
+
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 main-container">
+        <div class="col-xs-12" ng-view></div>
+      </div>
     </div>
-  </div>
+
 
 <!-- dependencies -->
-<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js">
 </script>
 <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
 <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+
 <!-- controllers -->
-<script type="text/javascript" src="/app/app.js"></script>
-<script type="text/javascript " src="/app/AppConstants.js "></script>
-<script type="text/javascript " src="/app/AppConfig.js "></script>
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="/app/values/fb-creds.js"></script>
+
+<!-- <script type="text/javascript" src="app/values/fb-creds.js"></script> -->
+<script type="text/javascript" src="/app/factories/AuthFactory.js"></script>
+<script type="text/javascript" src="/app/factories/FilterFactory.js"></script>
+<script type="text/javascript" src="/app/factories/MushroomFactory.js"></script>
+
+<script type="text/javascript" src="app/controllers/UserCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/UserDetailsCtrl.js"></script>
 <script type="text/javascript" src="/app/controllers/NavCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomCtrl.js"></script>
 <script type="text/javascript" src="/app/controllers/MushroomListCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomViewCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomNewCtrl.js"></script>
+<script type="text/javascript" src="/app/controllers/MushroomEditCtrl.js"></script>
+
+
 </body>
 </html>

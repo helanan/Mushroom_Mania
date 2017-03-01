@@ -1,0 +1,22 @@
+<h1> {{title}} </h1>
+<form>
+  <div class="form-group">
+    <label>Mushroom Name</label>
+    <!-- TODO: Hook up this form to our JS for submitting -->
+    <input type="text" class="form-control" placeholder="Mushroom Name" ng-model="newMushroom.name" />
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" placeholder="blah blah blah" ng-model="newMushroom.description"/>
+  </div>
+  <div class="form-group">
+    <label>Mushroom Image</label>
+    <input type="text" class="form-control" placeholder="Mushroom Image URL" ng-model="newMushroom.image"/>
+  </div>
+  <div class="form-group">
+    <label>Edible?</label>
+    <input type="text" class="form-control" placeholder="yes or no" ng-model="newMushroom.edible"/>
+  </div>
+  <!-- TODO: bind this button to a function -->
+  <button class="btn btn-default" ng-click="addNewMushroom()">{{btnText}}</button>
+</form>

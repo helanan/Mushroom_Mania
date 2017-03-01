@@ -1,0 +1,9 @@
+<h1 class="clip-text">Mushroom Details</h1>
+
+<h2>{{selectedMushroom.name}}</h2>
+<ul class="list-group">
+  <li class="list-group-item"><h2>Description: {{selectedMushroom.description}}</h2></li>
+  <li class="list-group-item"><h2>What It Looks Like: <img src="{{selectedMushroom.img}}" width="70"/></h2></li>
+  <li class="list-group-item"><h2>Edible: {{(selectedMushroom.isEdible ? "yes" : "no")}}</h2></li>
+</ul>
+<button class="btn btn-info"><a ng-href="#!/mushrooms/{{selectedMushroom.id}}/edit">Edit</a></button>
